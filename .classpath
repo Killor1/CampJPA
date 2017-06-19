@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/ManU/Desktop/Hibernate_Libs/postgresql-9.4.1212.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/ManU/Desktop/Hibernate_Libs/hibernate-search-5.5.5.Final/dist/lib/required/antlr-2.7.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/ManU/Desktop/Hibernate_Libs/hibernate-search-5.5.5.Final/dist/lib/required/dom4j-1.6.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/ManU/Desktop/Hibernate_Libs/hibernate-search-5.5.5.Final/dist/lib/required/hibernate-commons-annotations-5.0.1.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/ManU/Desktop/Hibernate_Libs/hibernate-search-5.5.5.Final/dist/lib/required/hibernate-core-5.0.11.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/ManU/Desktop/Hibernate_Libs/hibernate-search-5.5.5.Final/dist/lib/required/javassist-3.18.1-GA.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/ManU/Desktop/Hibernate_Libs/hibernate-search-5.5.5.Final/dist/lib/required/jboss-logging-3.3.0.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/ManU/Desktop/Hibernate_Libs/hibernate-search-5.5.5.Final/dist/lib/required/lucene-core-5.3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/ManU/Desktop/Hibernate_Libs/hibernate-search-5.5.5.Final/dist/lib/required/xml-apis-1.3.03.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ManU/Desktop/Hibernate_Libs/hibernate-search-5.5.5.Final/dist/lib/optional/jpa/hibernate-entitymanager-5.0.11.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ManU/Desktop/Hibernate_Libs/javax.persistence.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ManU/Desktop/jta.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ManU/Desktop/jac/javaee.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ManU/Desktop/jac/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

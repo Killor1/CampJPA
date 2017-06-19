@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<entity-mappings version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm http://xmlns.jcp.org/xml/ns/persistence/orm_2_1.xsd">
+    
+    <description>The minimal mappings for a persistent entity in XML.</description>
+    
+    <entity name="Activitats" class="Entities.Activitats" access="FIELD">
+   		 <table name="activitat"/>
+   		  <attributes>
+            <id name="id"/>
+            <basic name="desc">
+                <column name="text"/>
+            </basic>             
+         </attributes>
+     </entity>
+     
+     <entity name="Cuidador" class="Entities.Cuidador" access="FIELD">
+   		 <table name="cuidador"/>
+   		  <attributes>
+            <id name="dni"/>
+            <basic name="name">
+                <column name="nom" length="30"/>
+            </basic>  
+            <basic name="tlf">
+                <column name="telefon" length="9"/>
+            </basic>  
+            <basic name="direccio">
+                <column name="adreça" length="100"/>
+            </basic>    
+            <basic name="mail">
+                <column name="email" length="25"/>
+            </basic>                
+         </attributes>
+     </entity>
+     
+      <entity name="Nen" class="Entities.Nen" access="FIELD">
+   		 <table name="nen"/>
+        <attributes>
+            <id name="idNen"/>
+            <basic name="nom">
+                <column name="nom" length="30"/>
+            </basic> 
+            <basic name="data_naix">
+                <column name="data_naixement"/>
+            </basic>
+            <many-to-one name="cuidador" access="FIELD">
+              <join-column name="dni" unique="false" insertable="false" updatable="false"/>
+              <cascade>
+                <cascade-merge/>
+              </cascade>
+            </many-to-one>
+         </attributes>
+    </entity>
+    
+           <entity name="Camp" class="Entities.Camp" access="FIELD">
+   		 <table name="campament"/>
+   		  <attributes>
+            <id name="id"/>
+            <basic name="localitzacio">
+                <column name="lloc" length="30"/>
+            </basic>  
+            <basic name="data_ini">
+                <column name="data_inici"/>
+            </basic>  
+            <basic name="data_fi">
+                <column name="data_fi"/>
+            </basic>  
+            <one-to-many name="activitats" target-entity="Entities.Activitats">
+				<join-column name="id_activitat"/>
+				<cascade>
+				<cascade-merge/>
+				</cascade>
+			</one-to-many>          
+         </attributes>
+     </entity>
+      
+</entity-mappings>

@@ -1,0 +1,11 @@
+id,nom ,data_naixement,cuidador,menu_especial
+1,Lluis Homar,01-01-14,45785485d,false
+2,Felip Pou,05-05-13,45785485d,true
+3,Oscar Llopis,12-06-14,78458725h,false
+4,Arnau Mas,24-01-15,78458725h,true
+5,Maria Homar,23-10-11,78523694f,false
+6,Nuria Parlon,21-11-12,78523694f,true
+7,Isaac Munir,09-09-14,12453625b,false
+8,Alvaro Arbeloa,15-07-12,12453625b,true
+9,Pere Montull,14-05-14,45259635n,false
+10,Ismael Ortiz,17-04-13,45259635n,true
